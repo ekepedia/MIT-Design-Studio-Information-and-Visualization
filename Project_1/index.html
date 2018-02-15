@@ -10,26 +10,40 @@
 <div class="container">
     <div class="row">
         <h1 class="col-md-12">Visualizing Time</h1>
+        <p class="col-md-12">Time is shown at 12x speed. Refreshing the page will reset the time to the current time</p>
+
+    </div>
+    <div class="row">
+        <h2 class="col-md-12">Sketches</h2>
+
+        <img class="col-md-12" style="height: 100%; margin-bottom: 20px" src="sketches.jpeg"/>
+
+        <p class="col-md-12">From my sketches, I wanted to pick the 3 options that represented time in different unique ways. My first sketch puts emphasis on the hour, making it quick to check what time it is when you don’t necessarily care about the minutes. My second sketch put emphasis on the progression of time throughout the day. It starts at the top (midnight) and makes it way down, reseting itself at noon and repeating the process. My third sketch acts in a similar manner, but it instead puts emphasis on the progression of time throughout the hour. The third sketch would be most useful in scenarios where you quickly what to know what time it is relative to the minute, but don't necessarily care about the hour.</p>
+
     </div>
     <div class="row">
         <h2 class="col-md-12">Sketch 1</h2>
-        <canvas id="plot1"></canvas>
+        <div id="plot1">
+            <h1></h1>
+            <h3></h3>
+        </div>
     </div>
     <div class="row">
         <h2 class="col-md-12">Sketch 2</h2>
         <div id="plot2">
         </div>
-
     </div>
     <div class="row">
         <h2 class="col-md-12">Sketch 3</h2>
-        <div id="plot3"></div>
+        <div id="plot3">
+            <div class="time-bar"></div>
+            <div style="background-color: rebeccapurple" class="time-row"></div>
+        </div>
     </div>
 </div>
 
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="https://d3js.org/d3.v4.min.js"></script>
-<script src="script_1.js"></script>
-<script src="script_2.js"></script>
-<script src="script_3.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
