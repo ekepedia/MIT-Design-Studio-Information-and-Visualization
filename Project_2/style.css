@@ -1,16 +1,16 @@
 @font-face {
     font-family: "GothamBold";
-    src: url(/fonts/Gotham-Bold.otf) format("truetype");
+    src: url(fonts/Gotham-Bold.otf) format("truetype");
 }
 
 @font-face {
     font-family: "GothamMedium";
-    src: url(/fonts/Gotham-Medium.otf) format("truetype");
+    src: url(fonts/Gotham-Medium.otf) format("truetype");
 }
 
 @font-face {
     font-family: "GothamLight";
-    src: url(/fonts/Gotham-Light.otf) format("truetype");
+    src: url(fonts/Gotham-Light.otf) format("truetype");
 }
 
 .off-white-color {
