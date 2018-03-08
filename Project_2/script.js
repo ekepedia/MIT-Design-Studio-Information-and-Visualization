@@ -105,8 +105,12 @@ function populate_actual() {
 }
 
 
-$.getJSON("https://api.darksky.net/forecast/c2957fdd3dde4589bf233aeeaf22a570/37.8267,-122.4233", function( data ) {
+$.ajax({dataType: 'JSONP',
+    type: 'GET',
+    crossDomain: true,url:"https://api.darksky.net/forecast/c2957fdd3dde4589bf233aeeaf22a570/42.361145,-71.057083", complete: function( data ) {
     init = true;
+
+    data = data.responseJSON;
 
     daily     = data.daily;
     hourly    = data.hourly;
@@ -138,4 +142,4 @@ $.getJSON("https://api.darksky.net/forecast/c2957fdd3dde4589bf233aeeaf22a570/37.
         next += 5;
     }
 
-});
+}});
