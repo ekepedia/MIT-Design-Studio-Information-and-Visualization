@@ -1,0 +1,240 @@
+@font-face {
+    font-family: "GothamBold";
+    src: url(/fonts/Gotham-Bold.otf) format("truetype");
+}
+
+@font-face {
+    font-family: "GothamMedium";
+    src: url(/fonts/Gotham-Medium.otf) format("truetype");
+}
+
+@font-face {
+    font-family: "GothamLight";
+    src: url(/fonts/Gotham-Light.otf) format("truetype");
+}
+
+.off-white-color {
+    color: #FCFCF4;
+}
+
+.off-white-background {
+    background-color: #FCFCF4;
+}
+
+body {
+    padding: 50px;
+    font-family: "GothamLight", sans-serif;
+    font-size: 18px;
+}
+
+#plot1, #plot2, #plot3 {
+    width: 414px;
+    height: 736px;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:40px;
+    overflow: hidden;
+    position: relative;
+}
+
+.thermo, .temps {
+    margin-top: 40px;
+}
+
+#plot1 .thermo {
+    height: 650px;
+    float: left;
+    width: 36px;
+    background: linear-gradient(#F69836, #F74817, #F77F3D,  #F69836);
+    margin-left: 52px;
+    border-radius: 22px;
+}
+
+#plot1 .temps {
+    float: left;
+}
+
+
+#plot1 .time p {
+    float: left;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 0;
+    font-family: "GothamMedium", sans-serif;
+}
+
+#plot1 .temps p {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 90px;
+    font-family: "GothamBold", sans-serif;
+    color: #F75B45;
+    margin-left: 30px;
+}
+
+
+#plot1 .temps p .temp{
+    font-size: 12px;
+    font-family: "GothamMedium", sans-serif;
+    margin-left: 6px;
+}
+
+#plot1 .temps p .degree {
+    margin-left: -3px;
+}
+
+
+#plot1 .time {
+    margin-top: 35px;
+    margin-left: 330px;
+}
+
+.overflow-text {
+    font-family: "GothamBold", sans-serif;
+    color: rgba(247, 87, 69, 0.7);
+}
+
+.top-text {
+    left: -13px;
+    top: -31px;
+    position: absolute;
+    font-size: 78px;
+}
+
+.side-text {
+    top: 98px;
+    right: -111px;
+    position: absolute;
+    font-size: 96px;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+}
+
+.bottom-text {
+    left: 30.2px;
+    bottom: -57px;
+    position: absolute;
+    font-size: 93px;
+}
+
+.time-block {
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(120deg, #F6A234, #F77F3D);
+    z-index: -10;
+    transition: height 0.2s;
+}
+
+.background-block {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    background-color: #FCFCF4;
+    z-index: -90;
+}
+
+
+/* PLOT 2*/
+
+.current-temp {
+    left: -150px;
+    top: 20px;
+    position: absolute;
+    font-size: 600px;
+    line-height: 362px;
+    color: #F5F5ED;
+    z-index: -10;
+}
+
+.current-temp .second {
+    margin-left: 290px;
+}
+
+#plot2 .time {
+    margin-top: 35px;
+    margin-left: 305px;
+}
+
+
+#plot2 .time p {
+    float: left;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 0;
+    font-family: "GothamMedium", sans-serif;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+}
+
+#plot2 .bars {
+    width: 320px;
+    padding: 0 15px;
+    margin-top: 90px;
+    float: left;
+}
+
+#plot2 .dates {
+    padding: 0;
+    margin-top: 87.4px;
+    float: left;
+}
+
+#plot2 .bar {
+    height: 18px;
+    width: 200px;
+    background-color: #F67D2D;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: -4px;
+    float: left;
+    transition: width 1s;
+}
+
+#plot2 .bar-holder {
+    clear: both;
+    height: 72px;
+}
+
+#plot2 .date-holder {
+    clear: both;
+    height: 72px;
+}
+
+#plot2 .bar-holder p {
+    display: inline-block;
+    font-size: 8px;
+    font-family: "GothamLight", sans-serif;
+    float: left;
+    margin-right: 5px;
+}
+
+#plot2 .bar-holder .right {
+    margin-right: 0;
+    margin-left: 5px;
+    font-family: "GothamMedium", sans-serif;
+}
+
+#plot2 .bar-holder .left {
+    transition: margin-left 1s;
+}
+
+
+#plot2 .date-holder p {
+    float: left;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 0;
+    font-family: "GothamMedium", sans-serif;
+    color: rgba(247, 87, 69, 0.5);
+}
+
+.btn {
+    background-color: #F5F5ED;
+    border-radius: 20px;
+    padding: 2px 30px;
+    margin: 10px;
+}
