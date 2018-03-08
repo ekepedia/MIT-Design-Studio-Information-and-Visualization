@@ -105,7 +105,7 @@ function populate_actual() {
 }
 
 
-$.getJSON( "data.json", function( data ) {
+$.getJSON("https://api.darksky.net/forecast/c2957fdd3dde4589bf233aeeaf22a570/37.8267,-122.4233", function( data ) {
     init = true;
 
     daily     = data.daily;
