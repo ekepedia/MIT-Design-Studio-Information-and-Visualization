@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App - Project 2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <h1 class="col-md-12">First Dashboard</h1>
+        <div id="viz-container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1>Income vs.<br/>
+                        Private<br/>
+                        School<br/>
+                        Enrollment<br/>
+                    </h1>
+                    <div class="legend">
+                        <div class="income-bar" style="width: 200px; float: none"></div>
+                        <p>
+                            Income
+                        </p>
+                        <div class="private-bar" style="width: 200px"></div>
+                        <p>
+                            Private School<br/>
+                            Enrollment
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div id="graph">
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.5/lodash.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

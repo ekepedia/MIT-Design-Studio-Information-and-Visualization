@@ -1,0 +1,72 @@
+body {
+    padding: 50px;
+}
+
+
+#viz-container {
+    width: 100%;
+    height: 736px;
+    border: 1px solid;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:40px;
+    padding: 70px;
+}
+
+#viz-container h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.data-container {
+    float: right;
+    clear: both;
+    width: 100%;
+}
+
+.income-bar, .private-bar {
+    height: 20px;
+    background: linear-gradient(-90deg, #FFE9AC, white);
+    border-radius: 29px;
+}
+
+.income-bar {
+    float: right;
+    background: linear-gradient(90deg, #C18FDB, white);
+}
+
+.bar-holder, .state-holder {
+    display: inline-block;
+    overflow: hidden;
+    height: 40px;
+}
+
+.bar-holder {
+    width: 45%;
+}
+
+.state-holder {
+    width: 10%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#graph {
+    height: 666px;
+    overflow: scroll;
+}
+
+.legend {
+    font-size: 10pt;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 70px;
+}
+
+.legend p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
